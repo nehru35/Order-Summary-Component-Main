@@ -1,0 +1,174 @@
+:root {
+    --Pale-blue: hsl(224, 71%, 96%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+    --font-size: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-image: url("../images/pattern-background-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: cover;    
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* Main Container */
+
+main {
+    width: 90%;
+    height: 510px;
+    margin: 0 auto 20px;
+    background-color: var(--Very-pale-blue);
+    border: none;
+    border-radius: 10px;
+}
+
+p {
+    font-size: var(--font-size);
+}
+
+img {
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+}
+
+.second-container {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.content {
+    width: 100%;
+    padding: 10px;
+    
+}
+
+.content h1 {
+    margin: 10px auto;
+    font-size: 1.5rem;
+    color: var(--Dark-blue);
+}
+
+.content p {
+    line-height: 1.3rem;
+    color: var(--Desaturated-blue);
+}
+
+.third-container {
+    padding: 1rem;
+    background-color: var(--Pale-blue);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.third-container div:nth-child(1) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5px;
+}
+
+.third-container .music-image {
+    width: 45px;
+}
+
+.third-container .annual {
+    color: var(--Dark-blue);
+    font-weight: bold;
+}
+
+.third-container .price {
+    color: var(--Desaturated-blue);
+
+}
+
+.change-block a{
+    color: var(--Bright-blue)
+}
+
+.change-block a:active {
+    font-weight: bold;
+    color: hsl(245, 81%, 65%);
+    text-decoration: none;
+}
+
+.btn-section {
+    margin: 15px auto;
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+}
+
+button {
+    cursor: pointer;
+    display: block;
+}
+
+.btn1 {
+    background-color: var(--Bright-blue);
+    border: none;
+    color: var(--Very-pale-blue);
+    padding: 12px;
+    width: 100%;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: .1s linear;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+
+}
+
+.btn2 {
+    padding: 8px;
+    width: 40%;
+    margin: auto;
+    border: none;
+    background-color: transparent;
+
+}
+
+.btn1:active {
+    background-color: hsl(245, 81%, 65%);
+}
+
+.btn2:active {
+    font-weight: bold;
+}
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media (min-width: 375px) {
+
+    body {
+        background-image: url("../images/pattern-background-desktop.svg");
+        background-size: cover;
+        background-position: center;
+    }
+    main {
+        width: 350px;
+        
+    }
+}
