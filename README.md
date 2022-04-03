@@ -11,7 +11,7 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
 ### Links
 
 - Solution URL: [Github](https://github.com/nehru35/Order-Summary-Component-Main)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Netlify](https://ordersummarycardpage.netlify.app/)
 
 ## My process
 
